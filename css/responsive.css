@@ -1023,6 +1023,14 @@
     font-size: 14px;
 }
 
+html, body {
+    max-width: 100%;
+}
+
+body {
+    overflow-x: clip;
+}
+
 }
 
 /* extra mobile */
