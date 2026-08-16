@@ -26,18 +26,31 @@
         common css
 ================================*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 html, body {
+    width: 100%;
     max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
 }
 
-body {
-    overflow-x: clip;
+img, svg, picture, video {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
 }
 
 li{
@@ -46,12 +59,6 @@ li{
 
 a{
     text-decoration: none;
-}
-
-.container{
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 16px;
 }
 
 p,a,span{
