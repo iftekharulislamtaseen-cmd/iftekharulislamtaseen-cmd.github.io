@@ -64,6 +64,7 @@ a{
     text-decoration: none;
 }
 
+
 p,a,span{
     font-family: var(----poppins);
 }
@@ -153,12 +154,12 @@ h1,h2,h3,h4,h5,h6{
     display: block;
 }
 
-.header{
-    background-color: var(----white);
+.header {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 100;
-    padding: 23px 0;
+    z-index: 999;
+    background-color: var(----white);
 }
 
 /*=====================================
