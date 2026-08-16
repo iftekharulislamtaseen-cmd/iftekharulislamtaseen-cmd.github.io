@@ -1028,6 +1028,14 @@
 /* extra mobile */
 @media (max-width:375px){
 
+html, body {
+    max-width: 100%;
+}
+
+body {
+    overflow-x: clip;
+}
+    
 .Working-proccess-serial {
     align-items: center;
 }
