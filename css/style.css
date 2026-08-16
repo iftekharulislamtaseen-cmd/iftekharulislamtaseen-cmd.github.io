@@ -32,11 +32,15 @@
     box-sizing: border-box;
 }
 
-html, body {
-    width: 100%;
+html {
     max-width: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow-x: clip;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: clip;
+    position: relative;
 }
 
 img, svg, picture, video {
