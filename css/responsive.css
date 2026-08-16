@@ -1300,4 +1300,8 @@
 .rounded{
     right: 10%;
 }
+
+.header {
+    height: 47px;
+}
 }
