@@ -1292,7 +1292,7 @@
     width: 10px;
 }
 
-    .rounded {
+.rounded {
     padding: 9px;
     border: 2px solid white;
 }
@@ -1302,6 +1302,6 @@
 }
 
 .header {
-    height: 52px;
+    height: 55px;
 }
 }
