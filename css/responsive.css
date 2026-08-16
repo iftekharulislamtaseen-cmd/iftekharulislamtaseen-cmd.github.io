@@ -1292,4 +1292,12 @@
     width: 10px;
 }
 
+    .rounded {
+    padding: 9px;
+    border: 2px solid white;
+}
+
+.rounded{
+    right: 10%;
+}
 }
