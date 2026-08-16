@@ -36,7 +36,7 @@ html, body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
-    position: relative;
+    overflow-y: auto;
 }
 
 img, svg, picture, video {
@@ -50,7 +50,6 @@ img, svg, picture, video {
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 16px;
-    box-sizing: border-box;
 }
 
 li{
