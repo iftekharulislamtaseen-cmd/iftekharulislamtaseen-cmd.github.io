@@ -7,10 +7,20 @@
     left: 1%;
 }
 
+.ft-copy-ftt{
+    display: none;
+}
+
 }
 
 @media (max-width:992px){
-    .header-contain img {
+
+
+.header-contain{
+     padding: 20px 10px 0 10px;
+}
+
+.header-contain img {
     width: 130px;
 }
 
@@ -72,6 +82,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    padding: 0 10px 0 10px;
 }
 
 .main-title h3 {
@@ -164,7 +175,7 @@
 }
 
 .tes-img{
-    max-width: 450px;
+    max-width: 400px;
     width: 100%;
 }
 
@@ -233,6 +244,19 @@
 .contact-title p{
     font-size: 21px;
 }
+
+.slider-container{
+    padding: 0 30px 0 30px;
+}
+
+.testimonial{
+    padding: 0 30px 0 30px;
+}
+
+.contact {
+    padding: 0 30px 0 30px;
+}
+
 
 }
 
@@ -824,5 +848,8 @@
     left: 41%;
 }
 
+.slider-left{
+    padding-left: 10px;
+}
 
 }
