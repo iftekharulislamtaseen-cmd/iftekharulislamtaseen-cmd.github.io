@@ -1,0 +1,829 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffe1cc83;
+}
+
+/*========================================================
+                        common
+========================================================*/
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.title-break{
+    display: block;
+}
+
+body,html{
+    overflow-x: hidden;
+}
+
+/*===============================================================
+                            header
+===============================================================*/
+
+.header{
+    margin-bottom: 112px;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-contain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.header-contain img{
+    width: 188px;
+}
+
+.header-contain ul{
+    display: flex;
+    gap: 60px;
+}
+
+.header-contain ul li{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Manjari", sans-serif;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+.header-contain ul li:hover{
+    color: #FF9A55;
+}
+
+.btn{
+    padding: 15px 40px 10px 40px;
+    border: none;
+    background: #FF9A55;
+    border-radius: 100px;
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: linear-gradient(#BBF1DD, #56DCA9, #2BCF91);
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    gap: 52px;
+}
+
+.link a{
+    font-family: "Manjari", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: #FF9A55;
+}
+
+.link a:hover{
+    color: rgb(7, 244, 137);
+}
+
+/*=====================================================
+                    slider container
+=====================================================*/
+
+.slider{
+    margin-bottom: 170px;
+}
+
+.slider-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 70px;
+    margin: 38px 0;
+}
+
+.paw_sharp{
+    position: absolute;
+    z-index: -1;
+    top: 0.1%;
+    left: -6%;
+}
+
+.btn-sl{
+    display: flex;
+    align-items: center;
+    gap: 26.83px;
+}
+
+.btn-1{
+    font-family: "Manrope", sans-serif;
+    padding: 22px 40px;
+    border: none;
+    background: linear-gradient(#e2ce513b,#4f56e952);
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.3%;
+    cursor: pointer;
+}
+
+.btn-1:hover{
+    background: linear-gradient(#FF9A55, #FFB555);
+    border: none;
+}
+
+.btn-2{
+    font-family: "Manrope", sans-serif;
+    padding: 22px 40px;
+    border: 1px solid black;
+    background-color: #ffe1cc2b;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.3%;
+    cursor: pointer;
+}
+
+.btn-2:hover{
+    background: linear-gradient(#FF9A55, #FFB555);
+    border: none;
+}
+
+.main-btn-sl{
+    position: relative;
+}
+
+.book-here-1 img{
+    position: absolute;
+    left: 16.4%;
+    top: 120%;
+}
+
+.slider-left h3{
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    color: #27233A;
+    padding: 0 0 36px 0;
+}
+
+.slider-left p{
+    font-family: "Manjari", sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+    color: #27233A;
+    padding: 0 0 36px 0;
+    letter-spacing: 0.3%;
+    padding: 0 0 52px 0;
+}
+
+.main-sliders{
+    width: 659.83px;
+    position: relative;
+}
+
+.right-img img{
+    width: 600px;
+}
+
+/*=================================================
+                        work
+=================================================*/
+
+.workss{
+    margin-top: 112px;
+    margin-bottom: 112px;
+}
+
+.work-svg svg{
+    background: linear-gradient(#ADD9FF, #35A1FD, #0086FA);
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.work-svg{
+    padding-bottom: 30px;
+}
+
+.work-svg-2 svg{
+    background: linear-gradient(rgba(0, 0, 255, 0.637), rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.396));
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.work-svg-2{
+    padding-bottom: 30px;
+}
+
+.work-svg-3 svg{
+    background: linear-gradient(#BBF1DD, #56DCA9, #2BCF91);
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.work-svg-3{
+    padding-bottom: 30px;
+}
+
+.work-svg-4 svg{
+    background: linear-gradient(#FFEEAC, #FFD735, #F9C802);
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.work-svg-4{
+    padding-bottom: 30px;
+}
+
+.works-contains{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.wk-con{
+    text-align: center;
+    background-color: white;
+    padding: 53px 36px 36px 37px;
+    width: 293px;
+    border-radius: 40px;
+}
+
+.wk-con:hover{
+    background: linear-gradient(#FFC9A4, #FA8938, #F46601);
+    transform: translateY(-0.6rem);
+}
+
+
+.title-part h6{
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+    padding-bottom: 24px;
+}
+
+.title-part p{
+    font-family: "Manjari", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #27233A;
+}
+
+.main-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 64px;
+    position: relative;
+}
+
+.work-pow img{
+    position: absolute;
+    z-index: -1;
+    left: 46.5%;
+    bottom: 76%;
+}
+
+.main-title h3{
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #27233A;
+    padding-bottom: 40px;
+}
+
+.main-title p{
+    font-family: "Manjari", sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+    color: #27233A;
+    letter-spacing: 0.3%;
+    
+}
+
+/*========================================================
+                            Product
+========================================================*/
+
+.package{
+    margin-bottom: 112px;
+    position: relative;
+}
+
+.pow img{
+    position: absolute;
+    z-index: -1;
+    left: 60%;
+    top: -36%;
+}
+
+.prices-title-main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.prices-title-main h3{
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 7%;
+    color: #27233A;
+    padding-bottom: 40px;
+}
+
+.prices-title-main p{
+    font-family: "Manjari", sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.3%;
+    color: #27233A;
+    padding-bottom: 62px;
+    text-align: center;
+}
+
+.product-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-heading{
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #27233A;
+    padding-bottom: 24px;
+}
+
+.price-heading-2{
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #ffff;
+    padding-bottom: 33px;
+}
+
+
+.products-card{
+    padding: 70px 62px 60px 42px;
+    text-align: center;
+    background-color: white;
+    border-radius: 40px;
+    max-width: 363px;
+    width: 100%;
+    position: relative;
+}
+
+.products-card-2{
+    padding: 70px 62px 60px 42px;
+    text-align: center;
+    background: linear-gradient(#FF7F24, #FFA466, #FFC49B);
+    border-radius: 40px;
+    max-width: 363px;
+    width: 100%;
+    position: relative;
+    height: 941px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.products-card-2 ul li{
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+    letter-spacing: 1%;
+    padding-bottom: 30px;
+}
+
+.products-card-2 ul{
+    padding-bottom: 54px;
+}
+
+.best-offer img{
+    position: absolute;
+    top: -19%;
+    left: 90%;
+}
+
+.price-items{
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.price-items-2{
+    display: flex;
+    align-items: center;
+    padding-bottom: 46px;
+}
+
+.price-items svg{
+    width: 30px;
+    margin-bottom: 80px;
+}
+
+.price-number{
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 72px;
+    color: #FF9A55;
+}
+
+.price-number-2{
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 72px;
+    color: #ffffff;
+}
+
+.lines-img img{
+    width: 70px;
+    margin-left: -15px;
+}
+
+.last-pr-item h6{
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #3D394E;
+    margin-top: 40px;
+    margin-left: -37px;
+}
+
+.last-pr-item-2 h6{
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-left: -37px;
+}
+
+.products-card ul li{
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #3D394E;
+    letter-spacing: 1%;
+    padding-bottom: 30px;
+}
+
+.products-card ul{
+    padding-bottom: 54px;
+}
+
+.price-btn{
+    padding: 26px 67px 18px 67px;
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 1%;
+    color: #FFFFFF;
+    background: linear-gradient(#FF7F24, #FF9A55, #FF9A55);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.price-btn:hover{
+    background: linear-gradient(#BBF1DD, #56DCA9, #2BCF91);
+}
+
+.price-btn-2{
+    padding: 26px 67px 18px 67px;
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 1%;
+    color: #FD8631;
+    background: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.price-btn-2:hover{
+    background: linear-gradient(#4974e934, #da0fa124, #2bcf903d);
+    color: #0086FA;
+}
+
+/*==================================================================
+                            testimonials
+==================================================================*/
+
+.testimonial{
+    margin-bottom: 112px;
+    position: relative;
+}
+
+.tes-pow img{
+    position: absolute;
+    top: -43%;
+    left: 32%;
+    z-index: -1;
+}
+
+.tes-title{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.tes-title h3{
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 7%;
+    color: #27233A;
+}
+
+.tes-title p{
+    font-family: "Manjari", sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.3%;
+    color: #27233A;
+}
+
+.testimonials-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.circle-of-tes{
+    padding: 30px 30px;
+    background-color: #FFE1CC;
+    border-radius: 50%;
+}
+
+.man-bio{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 35.48px;
+}
+
+.title-of-man h6{
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #27233A;
+}
+
+.title-of-man span{
+    font-family: "Manjari", sans-serif;
+    font-size: 20px;
+    color: #27233A;
+}
+
+.p-man-title{
+    font-family: "Manjari", sans-serif;
+    font-size: 22px;
+    line-height: 40px;
+    letter-spacing: 0.3%;
+    color: #27233A;
+    padding-bottom: 40px;
+}
+
+.svg-main{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.svg-arrow{
+    border: 1px solid #FF9A55;
+    padding: 23px 20px;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+}
+
+.svg-arrow:hover{
+    background-color: blue;
+    border: none;
+}
+
+/*==============================================================
+                            contact container
+==============================================================*/
+
+.contact{
+    position: relative;
+}
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 80px 537px 41px 50px;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 112px;
+}
+
+.contact-title h3{
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 54px;
+    letter-spacing: 7%;
+    color: #FF9A55;
+    padding-bottom: 32px;
+}
+
+.contact-title p{
+    font-family: "Manjari", sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing:0.3%;
+    color: #27233A;
+    padding-bottom: 48px;
+}
+
+
+.four-img img{
+    position: absolute;
+}
+
+.img-1{
+    width: 430px;
+    left: 65.9%;
+    top: 16.7%;
+    z-index: 5;
+}
+
+.line-four-img{
+    width: 470px;
+    top: 10%;
+    left: 63%;
+    z-index: 5;
+    position: relative;
+}
+
+.four-img-pow-1{
+    width: 70px;
+    left: 94%;
+    bottom: 73%;
+}
+
+.four-img-pow-2{
+    position: absolute;
+    width: 70px;
+    z-index: 6;
+    left: 60%;
+    top: 68%;
+}
+
+/*================================================================
+                            footer
+================================================================*/
+
+.footer{
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.mask-group{
+    position: absolute;
+    top: 20%;
+    z-index: -1;
+}
+
+.ft-contain-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0 59px 0;
+}
+
+.ft-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 121px;
+    text-align: left;
+}
+
+.ft-copyright-title-1{
+    font-family: "Manjari", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.3%;
+    color: #929292;
+    padding-bottom: 7px;
+}
+
+.ft-copyright-title-2 a{
+    font-family: "Manjari", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.3%;
+    color: #929292;
+    transition: all 0.1s linear;
+}
+
+.ft-copyright-title-2 a:hover{
+    color: #FF9A55;
+}
+
+.card-item h3{
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #27233A;
+    padding-bottom: 24px;
+    padding-top: 50px;
+}
+
+.card-item ul li{
+    font-family: "Manjari", sans-serif;
+    font-size: 14px;
+    color: #9A9EA6;
+    padding-bottom: 22px;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+.card-item ul li:hover{
+    color: #FF9A55;
+}
+
+.contact-ft-section h3{
+    font-family: "Manjari", sans-serif;
+    font-size: 18px;
+    color: #27233A;
+    padding-bottom: 16px;
+}
+
+.contact-ft-section p{
+    font-family: "Manjari", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #9A9EA6;
+    padding-bottom: 47px;
+}
+
+.social-icons img{
+    width: 15px;
+    padding-top: 2px;
+}
+
+.social-icons{
+    background-color: #5A595F;
+    padding: 15px;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.social-icons:hover{
+    background: #FF9A55;
+}
+
+.soc-icon-contain{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
