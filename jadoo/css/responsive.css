@@ -16,12 +16,6 @@
        top: 16%;
        left: 42%;
     }
-
-    .right-section img{
-        /* display: block; */
-        max-width: 750px;
-        width: 100%;
-    }
 }
 
 @media(max-width: 992px){
@@ -59,6 +53,13 @@
     nav{
         font-size: 14px;
     }
+
+    .right-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 }
 
 @media(max-width: 768px){
@@ -86,6 +87,12 @@
         z-index: -1;
     }
 
+    .right-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
     
 }
 
@@ -97,8 +104,8 @@
     }
 
     .left-section div h3{
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 65px;
+    line-height: 68px;
     padding-bottom: 15px;
     }
 
@@ -119,12 +126,12 @@
 
 
     .topi-0 img{
-        max-width: 200px;
+        max-width: 350px;
         width: 100%;
     }
     
     .topi-0{
-        left: 25%;
+        left: 40%;
     }
 
     .btn{
@@ -163,6 +170,7 @@
     .d-flexi {
         gap: 20px;
     }
+
 
 }
 
