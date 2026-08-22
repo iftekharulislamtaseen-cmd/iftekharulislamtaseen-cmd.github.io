@@ -32,15 +32,12 @@
     }
 
     .left-section div h3{
-    font-family: "Vollkorn", serif;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 62px;
+    font-size: 65px;
     }
 
     .topi-0{
-       top: 13%;
-       left: 30%;
+       top: 15%;
+       left: 40%;
     }
 
     .topi-0 img{
