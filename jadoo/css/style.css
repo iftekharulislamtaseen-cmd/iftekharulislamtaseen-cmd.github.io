@@ -1,122 +1,109 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container{
-    max-width: 1170px !important;
-    width: 100% !important;
-    margin: 0 auto !important;
-} 
-
-nav{
-    font-family: "Poppins", sans-serif;
-    font-size: 17px;
-}
-
-a{
-    font-family: "Poppins", sans-serif;
-    text-decoration: none;
-}
-
-html,body{
-    overflow-x: hidden;
+    max-width: 1170px;
     width: 100%;
+    margin: 0 auto;
 }
 
-h1,h2,h4,h5,h6{
-    font-family: "Poppins", sans-serif;
+nav {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
 }
 
-.btn{
-    padding: 9px 22px;
-    font-family: "Vollkorn", serif;
+a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
 }
 
-.dec-1{
-    max-width: 700px;
-    width: 100%;
+h1,
+h2,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
 }
 
-.d-flexi{
-    gap: 42px;
+.btn {
+  padding: 9px 22px;
+  font-family: "Vollkorn", serif;
 }
 
-.d-flexx{
-    display: flex;
+.d-flexi {
+  gap: 42px;
 }
 
-.btn-icon{
-    padding: 15px 15px;
-
+.d-flexx {
+  display: flex;
 }
 
-
-.d-flex select{
-    border: none;
-    outline: none;
-    background-color: transparent;
+.btn-icon {
+  padding: 15px 15px;
 }
 
-.navbar-nav{
-    gap: 59px;
+.d-flex select {
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 
-.nav-item a{
-    font-family: "Poppins", sans-serif;
+.navbar-nav {
+  gap: 59px;
 }
 
-.nav-link{
-    font-weight: 500;
+.nav-item a {
+  font-family: "Poppins", sans-serif;
 }
 
-
-.size-img{
-    width: 52px;
+.nav-link {
+  font-weight: 500;
 }
 
-.play-text{
-    font-weight: 500;
-    font-size: 17px;
+.size-img {
+  width: 52px;
 }
 
-.left-section h5{
-    color: #DF6951;
-    font-weight: 700;
-    font-size: 20px;
-    padding-bottom: 27px;
+.play-text {
+  font-weight: 500;
+  font-size: 17px;
 }
 
-.left-section div h3{
-    font-family: "Vollkorn", serif;
-    font-weight: 700;
-    font-size: 84px;
-    line-height: 89px;
-    letter-spacing: -4%;
-    color: #181E4B;
-    padding-bottom: 27px;
+.left-section h5 {
+  color: #df6951;
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 27px;
 }
 
-.left-section p{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 30px;
-    color: #5E6282;
-    padding-bottom: 34px;
+.left-section div h3 {
+  font-family: "Vollkorn", serif;
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 89px;
+  letter-spacing: -4%;
+  color: #181e4b;
+  padding-bottom: 27px;
+}
+
+.left-section p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #5e6282;
+  padding-bottom: 34px;
 }
 
 .topi-0 {
-    top: 15%;
-    left: 35%;
-    width: 50%;
-}
-
-.topi-0 img {
-    width: 100%;
+  top: 17%;
+  left: 46%;
 }
