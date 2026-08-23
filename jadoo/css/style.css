@@ -5,8 +5,9 @@
 }
 
 .container{
-  max-width: 1170px;
-  width: 100%;
+  max-width: 1170px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
 }
 
 nav {
@@ -151,10 +152,6 @@ h6 {
   line-height: 26px;
   color: #5E6282;
   text-align: center;
-}
-
-.imgg{
-  margin-top: -40px;
 }
 
 .hero-title h6{
