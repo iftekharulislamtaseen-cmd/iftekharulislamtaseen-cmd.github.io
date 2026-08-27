@@ -171,3 +171,29 @@ h6 {
 .category{
   margin-top: 112px;
 }
+
+.top-title{
+  max-width: 318px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 0 0 30px 30px;
+  bottom: 27%;
+  right: 65.4%;
+  padding: 27px 26px 42px 19px;
+}
+
+.imga{
+  overflow: hidden;
+}
+
+.card-main{
+  display: flex;
+}
+
+.tes-content .hero-title{
+  text-align: left;
+}
+
+.testomonial{
+  margin-top: 112px;
+}
