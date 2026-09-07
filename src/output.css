@@ -212,7 +212,7 @@
     &:active {
       color: var(--color-white);
     }
-    @media (width >= 370px) {
+    @media (width >= 360px) {
       display: none;
     }
     @media (width >= 768px) {
@@ -306,7 +306,7 @@
       color: var(--color-reds);
     }
   }
-  @media (width >= 370px) {
+  @media (width >= 360px) {
     .sm\:relative {
       position: relative;
     }
