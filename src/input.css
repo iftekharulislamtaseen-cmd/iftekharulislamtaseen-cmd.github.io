@@ -6,13 +6,16 @@
   --breakpoint-sm: 360px;
   --breakpoint-md: 480px;
   --breakpoint-lg: 768px;
+  --breakpoint-2lg: 901px;
   --breakpoint-xl: 992px;
   --breakpoint-2xl: 1280px;
   --color-reds: #e53925;
   --color-red2: #F29C92;
   --color-blue: #0F1D37;
+  --color-orange2: #E46F64;
   --spacing: 1px;
   --font-dm: "DM Sans", sans-serif;
+  --font-space: "Space Grotesk", sans-serif;
 }
 
 @utility topcontainer {
@@ -21,8 +24,14 @@
   margin: 0 auto;
 }
 
+@utility container{
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 @utility btn-primary {
-  @apply flex items-center gap-10 pt-14 pr-26 pb-15 pl-33 bg-reds border-none hover:bg-amber-300 active:bg-black active:text-white max-sm:hidden max-lg:block max-lg:mr-20
+  @apply flex items-center gap-10 pt-14 pr-26 pb-15 pl-33 bg-reds border-none hover:bg-amber-300 active:bg-black active:text-white max-sm:hidden max-lg:block max-lg:mr-20 cursor-pointer
 }
 
 
