@@ -193,6 +193,9 @@
     @media (width >= 768px) {
       max-width: 768px;
     }
+    @media (width >= 901px) {
+      max-width: 901px;
+    }
     @media (width >= 992px) {
       max-width: 992px;
     }
@@ -253,9 +256,6 @@
   .flex {
     display: flex;
   }
-  .table {
-    display: table;
-  }
   .h-1 {
     height: var(--spacing);
   }
@@ -280,32 +280,11 @@
   .w-auto {
     width: auto;
   }
-  .w-full {
-    width: 100%;
-  }
-  .max-w-200 {
-    max-width: calc(var(--spacing) * 200);
-  }
-  .max-w-320 {
-    max-width: calc(var(--spacing) * 320);
-  }
-  .flex-1 {
-    flex: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .cursor-pointer {
     cursor: pointer;
   }
-  .resize {
-    resize: both;
-  }
   .flex-col {
     flex-direction: column;
-  }
-  .flex-wrap {
-    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -333,10 +312,6 @@
   }
   .gap-60 {
     gap: calc(var(--spacing) * 60);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-r-1 {
     border-right-style: var(--tw-border-style);
@@ -448,13 +423,6 @@
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   @media (hover: hover) {
     .hover\:text-reds:hover {
       color: var(--color-reds);
@@ -488,10 +456,6 @@
     .sm\:gap-10 {
       gap: calc(var(--spacing) * 10);
     }
-    .sm\:border {
-      border-style: var(--tw-border-style);
-      border-width: 1px;
-    }
     .sm\:border-t-1 {
       border-top-style: var(--tw-border-style);
       border-top-width: 1px;
@@ -499,10 +463,6 @@
     .sm\:border-r-0 {
       border-right-style: var(--tw-border-style);
       border-right-width: 0px;
-    }
-    .sm\:border-b {
-      border-bottom-style: var(--tw-border-style);
-      border-bottom-width: 1px;
     }
     .sm\:border-b-1 {
       border-bottom-style: var(--tw-border-style);
@@ -575,12 +535,6 @@
     .md\:pl-10 {
       padding-left: calc(var(--spacing) * 10);
     }
-    .md\:pl-60 {
-      padding-left: calc(var(--spacing) * 60);
-    }
-    .md\:pl-80 {
-      padding-left: calc(var(--spacing) * 80);
-    }
     .md\:pl-100 {
       padding-left: calc(var(--spacing) * 100);
     }
@@ -601,9 +555,6 @@
     .lg\:w-600 {
       width: calc(var(--spacing) * 600);
     }
-    .lg\:flex-1 {
-      flex: 1;
-    }
     .lg\:flex-row {
       flex-direction: row;
     }
@@ -619,10 +570,6 @@
     .lg\:gap-20 {
       gap: calc(var(--spacing) * 20);
     }
-    .lg\:border {
-      border-style: var(--tw-border-style);
-      border-width: 1px;
-    }
     .lg\:border-t-0 {
       border-top-style: var(--tw-border-style);
       border-top-width: 0px;
@@ -633,9 +580,6 @@
     }
     .lg\:px-100 {
       padding-inline: calc(var(--spacing) * 100);
-    }
-    .lg\:py-100 {
-      padding-block: calc(var(--spacing) * 100);
     }
     .lg\:pr-20 {
       padding-right: calc(var(--spacing) * 20);
@@ -657,6 +601,12 @@
       line-height: calc(var(--spacing) * 70);
     }
   }
+  @media (width >= 901px) {
+    .\32 lg\:border-r-1 {
+      border-right-style: var(--tw-border-style);
+      border-right-width: 1px;
+    }
+  }
   @media (width >= 992px) {
     .xl\:flex {
       display: flex;
@@ -666,10 +616,6 @@
     }
     .xl\:flex-row {
       flex-direction: row;
-    }
-    .xl\:border {
-      border-style: var(--tw-border-style);
-      border-width: 1px;
     }
     .xl\:border-r-1 {
       border-right-style: var(--tw-border-style);
@@ -684,26 +630,10 @@
     .xl\:text-\[13px\] {
       font-size: 13px;
     }
-    .xl\:text-\[1\] {
-      color: 1;
-    }
-    .xl\:text-\[13\] {
-      color: 13;
-    }
-    .xl\:text-\[16\] {
-      color: 16;
-    }
   }
   @media (width >= 1280px) {
-    .\32 xl\:flex {
-      display: flex;
-    }
     .\32 xl\:flex-row {
       flex-direction: row;
-    }
-    .\32 xl\:border {
-      border-style: var(--tw-border-style);
-      border-width: 1px;
     }
     .\32 xl\:border-r-1 {
       border-right-style: var(--tw-border-style);
@@ -716,17 +646,8 @@
     .\32 xl\:px-50 {
       padding-inline: calc(var(--spacing) * 50);
     }
-    .\32 xl\:px-100 {
-      padding-inline: calc(var(--spacing) * 100);
-    }
-    .\32 xl\:py-100 {
-      padding-block: calc(var(--spacing) * 100);
-    }
     .\32 xl\:pl-10 {
       padding-left: calc(var(--spacing) * 10);
-    }
-    .\32 xl\:pl-100 {
-      padding-left: calc(var(--spacing) * 100);
     }
     .\32 xl\:text-\[16px\] {
       font-size: 16px;
@@ -746,18 +667,12 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
     }
   }
 }
