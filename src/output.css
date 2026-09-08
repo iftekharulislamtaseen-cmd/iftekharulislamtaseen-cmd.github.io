@@ -307,6 +307,9 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-start {
+    justify-content: flex-start;
+  }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
@@ -637,6 +640,12 @@
     }
   }
   @media (width >= 901px) {
+    .\32 lg\:flex {
+      display: flex;
+    }
+    .\32 lg\:flex-row {
+      flex-direction: row;
+    }
     .\32 lg\:border-r-1 {
       border-right-style: var(--tw-border-style);
       border-right-width: 1px;
