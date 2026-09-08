@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="overflow-x-hidden overflow-y-hidden">
+<html class="m-0 p-0 box-border">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,53 +12,138 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="overflow-x-hidden overflow-y-hidden">
-    <section class="relative">
-    <header class="bg-reds py-7 sm:hidden md:hidden lg:block">
-      <div class="topcontainer">
-        <div class="flex items-center sm:flex-col xl:flex-row lg:flex-col lg:gap-5 lg:items-center sm:gap-10 sm:items-start justify-between font-dm xl:pl-250 lg:pl-60 md:pl-0 md:ml-20 md:mr-20 sm:pl-20">
-          <div class="flex items-center sm:flex-col xl:flex-row sm:gap-10 sm:items-start gap-60 text-white leading-28 xl:text-[10px] 2xl:text-[16px] md:text-[12px] sm:text-[12px] lg:text-[14px]">
-            <div class="flex items-center gap-17"><i class="fa-solid fa-phone" style="color: #ffffff;"></i>1-414-425-5353</div>
-            <div class="flex items-center gap-17"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>11251 W. Forest Home Ave. Franklin, WI 53132</div>
-          </div>
-          <div class="flex items-center gap-21 text-white xl:text-[10px] all:text-[16px] 2xl:text-[16px] md:text-[12px] sm:text-[12px] lg:text-[14px]"> 
-            <span>Follow Us</span>
-            <div class="bg-red2 w-54 h-1"></div>
-            <div><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></div>
-            <div><i class="fa-brands fa-pinterest" style="color: #ffffff;"></i></div>
-            <div><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <nav class="bg-blue">
-      <div class="absolute top-0 left-0"><img src="./img/after.png" alt=""></div>
-      <div class="topcontainer">
-        <div class="flex items-center justify-between">
-          <div class="bg-reds py-23 pb-23 -ml-70 pl-94">
-            <img class="sm:w-150" src="./img/div.header-logo.png" alt="">
-          </div>
-          <ul class="flex items-center gap-38 font-dm text-[15px] leading-28 text-white cursor-pointer sm:hidden xl:flex lg:text-[12px] 2xl:text-[16px]">
-            <li class="flex items-center gap-5 hover:text-reds">Home<i class="fa-solid fa-chevron-down" style="color: rgb(99, 230, 190);"></i></li>
-            <li class="hover:text-reds">about us</li>
-            <li class="hover:text-reds">Service</li>
-            <li class="flex items-center gap-5 hover:text-reds">Pages<i class="fa-solid fa-chevron-down" style="color: rgb(99, 230, 190);"></i></li>
-            <li class="flex items-center gap-5 hover:text-reds">Blog<i class="fa-solid fa-chevron-down" style="color: rgb(99, 230, 190);"></i></li>
-            <li>Contact</li>
-          </ul>
-          <div class="lg:flex lg:items-center lg:gap-20 lg:pr-20 md:flex md:items-center md:gap-20">
-          <div class="flex flex-col gap-10 xl:hidden sm:pr-20">
-            <span class="bg-reds w-30 h-1"></span>
-            <span class="bg-reds w-30 h-1"></span>
-            <span class="bg-reds w-30 h-1"></span>
-          </div>
-          <div>
-            <a class="btn-primary md:hidden lg:block sm:hidden" href="">Get In Touch<i class="fa-solid fa-arrow-trend-up 2xl:pl-10 md:pl-10" style="color: rgb(99, 230, 190);"></i></a>
-          </div>
+  <body class="m-0 p-0 box-border">
+    <!-- header and nav section -->
+    <section>
+      <header class="bg-reds py-7 sm:hidden md:hidden lg:block">
+        <div class="topcontainer">
+          <div
+            class="flex items-center sm:flex-col xl:flex-row lg:flex-row lg:gap-5 lg:items-center sm:gap-10 sm:items-start justify-between font-dm xl:pl-250 lg:pl-60 md:pl-0 md:ml-20 md:mr-20 sm:pl-20"
+          >
+            <div
+              class="flex items-center sm:flex-col xl:flex-row sm:gap-10 sm:items-start gap-60 text-white leading-28 xl:text-[10px] 2xl:text-[16px] md:text-[12px] sm:text-[12px] lg:text-[14px]"
+            >
+              <div class="flex items-center gap-17">
+                <i class="fa-solid fa-phone" style="color: #ffffff"></i
+                >1-414-425-5353
+              </div>
+              <div class="flex items-center gap-17">
+                <i class="fa-solid fa-location-dot" style="color: #ffffff"></i
+                >11251 W. Forest Home Ave. Franklin, WI 53132
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-21 text-white xl:text-[10px] all:text-[16px] 2xl:text-[16px] md:text-[12px] sm:text-[12px] lg:text-[14px]"
+            >
+              <span>Follow Us</span>
+              <div class="bg-red2 w-54 h-1"></div>
+              <div>
+                <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-pinterest" style="color: #ffffff"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-linkedin-in" style="color: #ffffff"></i>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </header>
+      <nav class="bg-blue">
+        <div class="absolute top-0 left-0">
+          <img class="w-130" src="./img/after.png" alt="" />
+        </div>
+        <div class="topcontainer">
+          <div class="flex items-center justify-between">
+            <div class="bg-reds py-23 pb-23 -ml-70 pl-94 w-auto">
+              <img class="sm:w-150" src="./img/div.header-logo.png" alt="" />
+            </div>
+            <ul
+              class="flex items-center gap-38 font-dm text-[15px] leading-28 text-white cursor-pointer sm:hidden xl:flex lg:text-[12px] 2xl:text-[16px]"
+            >
+              <li class="flex items-center gap-5 hover:text-reds">
+                Home<i
+                  class="fa-solid fa-chevron-down"
+                  style="color: rgb(99, 230, 190)"
+                ></i>
+              </li>
+              <li class="hover:text-reds">about us</li>
+              <li class="hover:text-reds">Service</li>
+              <li class="flex items-center gap-5 hover:text-reds">
+                Pages<i
+                  class="fa-solid fa-chevron-down"
+                  style="color: rgb(99, 230, 190)"
+                ></i>
+              </li>
+              <li class="flex items-center gap-5 hover:text-reds">
+                Blog<i
+                  class="fa-solid fa-chevron-down"
+                  style="color: rgb(99, 230, 190)"
+                ></i>
+              </li>
+              <li class="hover:text-reds">Contact</li>
+            </ul>
+            <div
+              class="lg:flex lg:items-center lg:gap-20 lg:pr-20 md:flex md:items-center md:gap-20"
+            >
+              <div class="flex flex-col gap-10 xl:hidden sm:pr-20">
+                <span class="bg-reds w-30 h-1"></span>
+                <span class="bg-reds w-30 h-1"></span>
+                <span class="bg-reds w-30 h-1"></span>
+              </div>
+              <div>
+                <a class="btn-primary md:hidden lg:block sm:hidden" href=""
+                  >Get In Touch<i
+                    class="fa-solid fa-arrow-trend-up 2xl:pl-10 md:pl-10"
+                    style="color: rgb(99, 230, 190)"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     </section>
+    <!-- slider section -->
+    <section class="sm:pl-20" style="background-image: url(./img/section.hero_area.png); background-size: cover; background-repeat: no-repeat; height: auto;">
+      <div class="container">
+        <div class="pt-188 pb-197 sm:pt-88 sm:pb-97">
+          <h3 class="font-space font-bold text-[68px] leading-80 text-white w-746 pb-12 sm:text-[25px] sm:w-270 sm:leading-40 md:text-[35px] md:w-320 lg:text-[65px] lg:w-600 lg:leading-70">How Road Workers Shape <span class="text-reds">Our Daily</span> Commute</h3>
+          <p class="font-dm text-[18px] leading-30 text-white w-603 pb-43 sm:w-400 pr-90 md:w-450 lg:w-600">
+            We face each project as a new chalenge and with our ability to build
+            and innovate we overcome all barriers to using content.
+          </p>
+          <button class="btn-primary">Explore More<i
+                    class="fa-solid fa-arrow-trend-up 2xl:pl-10 md:pl-10"
+                    style="color: rgb(99, 230, 190)"
+                  ></i
+                ></button>
+        </div>
+      </div>
+    </section>
+    <!-- information section -->
+     <section class="bg-orange2">
+      <div class="container">
+        <div class="flex items-center justify-between font-space sm:flex-wrap md:flex-col lg:flex-row lg:flex-wrap xl:text-[13px] 2xl:text-[16px] 2xl:flex-row">
+          <div class="border-l-1 border-white h-167 flex flex-col justify-center pl-100 sm:flex-1 sm:border-b-1 sm:border-t-1 sm:border-l-0 md:w-full md:items-center md:pl-0 md:py-20 lg:px-100 lg:border-t-0 lg:border-r-1 2xl:border-l-1 2xl:px-50">
+            <h3 class="text-[52px] leading-60 font-bold text-white pb-3">26K</h3>
+            <span class="font-dm font-medium leading-30 text-white">Project Completed</span>
+          </div>
+          <div class="border-l-1 border-white h-167 flex flex-col justify-center pl-100 sm:flex-1 sm:border-b-1 sm:border-l-0 md:w-full md:items-center md:pl-0 md:py-20 lg:px-100 xl:border-r-1 2xl:px-50">
+            <h3 class="text-[52px] leading-60 font-bold text-white pb-3">24K</h3>
+            <span class="font-dm font-medium leading-30 text-white">Satisfied Clients</span>
+          </div>
+          <div class="border-l-1 border-white h-167 flex flex-col justify-center pl-100 sm:flex-1 sm:border-b-1 sm:border-l-0 md:w-full md:items-center md:pl-0 md:py-20 lg:px-100 lg:border-r-1 2xl:px-50">
+            <h3 class="text-[52px] leading-60 font-bold text-white pb-3">47+</h3>
+            <span class="font-dm font-medium leading-30 text-white">Years Of Experience</span>
+          </div>
+          <div class="border-l-1 border-r-1 border-white h-167 flex flex-col justify-center pl-100 pr-100 sm:flex-1 sm:border-b-1 sm:border-l-0 sm:border-r-0 md:w-full md:items-center md:pl-100 md:py-20 2xl:border-r-1 2xl:px-50">
+            <h3 class="text-[52px] leading-60 font-bold text-white pb-3">56K</h3>
+            <span class="font-dm font-medium leading-30 text-white">Total Branches</span>
+          </div>
+        </div>
+      </div>
+     </section>
   </body>
 </html>
