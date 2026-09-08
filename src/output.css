@@ -328,6 +328,9 @@
   .gap-60 {
     gap: calc(var(--spacing) * 60);
   }
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
