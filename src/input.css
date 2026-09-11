@@ -34,6 +34,8 @@
   @apply flex items-center gap-10 pt-14 pr-26 pb-15 pl-33 bg-reds border-none hover:bg-amber-300 active:bg-black active:text-white max-sm:hidden max-lg:block max-lg:mr-20 cursor-pointer
 }
 
-
+.before::before{
+  background-image: url(/img/rrr.png);
+}
 
 
