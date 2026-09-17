@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme{
+    --spacing: 1px;
+    --radius-br15: 5px;
+}
