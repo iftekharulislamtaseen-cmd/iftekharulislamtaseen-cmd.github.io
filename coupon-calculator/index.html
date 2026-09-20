@@ -64,9 +64,9 @@
       const prprices = document.getElementById("prprices");
 
       const pprice = 1000.00;
-      totalprice.innerHTML = `<span class="">${pprice}</span>`;
-      prprice.innerHTML =  `<span class="">${pprice}</span>`;
-      prprices.innerHTML = `<span class="">${pprice}</span>`;
+      totalprice.innerHTML = `<span class="">${pprice.toFixed(2)}</span>`;
+      prprice.innerHTML =  `<span class="">${pprice.toFixed(2)}</span>`;
+      prprices.innerHTML = `<span class="">${pprice.toFixed(2)}</span>`;
 
       function getapply() {
         if (input.value === "") {
