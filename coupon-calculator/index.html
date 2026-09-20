@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="bg-white h-screen min-h-screen flex justify-center items-center">
+    <div class="container">
+      <div class="flex gap-30 justify-center">
+        <div class="px-30 py-30 rounded-lg border border-gray-400">
+          <div class="flex items-center gap-20 mb-30">
+            <img class="h-50 w-50" src="./assets/download.jpg" alt="" />
+            <div>
+              <h3>Products</h3>
+              <span id="prprice"></span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center gap-20">
+              <div>
+                <input
+                  class="outline-0 border-l-3 border-l-red-500 border-r border-t border-b border-r-gray border-t-gray border-b-gray pt-5 pb-10 px-10 focus:border-r-blue-500 focus:border-t-blue-500 focus:border-b-blue-500 rounded-lg placeholder:text-[12px] placeholder:text-gray-600"
+                  type="text"
+                  name=""
+                  id="input"
+                  placeholder="Enter Your Coupon (e.g.TASEEN45) Code Here"
+                />
+              </div>
+              <button
+                onclick="getapply()"
+                class="bg-blue-500 pt-5 pb-10 px-10 rounded-md text-white"
+              >
+                Apply
+              </button>
+            </div>
+            <div class="h-10" id="message"></div>
+          </div>
+        </div>
+        <div class="px-30 py-30 rounded-lg border border-gray-400 w-300">
+          <div>
+            <div class="flex items-center justify-between">
+              <h3>product price</h3>
+              <span id="prprices">0</span>
+            </div>
+            <div id="discount"></div>
+          </div>
+          <span class="bg-gray-400 w-full h-1 block mt-20 mb-15"></span>
+          <div class="flex items-center justify-between">
+            <h3>total price</h3>
+            <div id="totalprice"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const input = document.getElementById("input");
+      const totalprice = document.getElementById("totalprice");
+      const discount = document.getElementById("discount");
+      const message = document.getElementById("message");
+      const prprice = document.getElementById("prprice");
+      const prprices = document.getElementById("prprices");
+
+      const pprice = 18205;
+      totalprice.innerHTML = `<span class="">${pprice}</span>`;
+      prprice.innerHTML =  `<span class="">${pprice}</span>`;
+      prprices.innerHTML = `<span class="">${pprice}</span>`;
+
+      function getapply() {
+        if (input.value === "") {
+          message.innerHTML = `<span class="text-blue-500 text-[12px]">Please Input Your Coupon</span>`;
+        } else if (input.value === "TASEEN45") {
+          let discounts = pprice * 0.1;
+          discount.innerHTML = `<div class="flex items-center justify-between h-15 pt-10" id="">
+                <h3>discount</h3>
+                <span class="">-${discounts.toFixed(2)}</span>
+            </div>`;
+           let totalprices = pprice - discounts;
+           totalprice.innerHTML = `<span class="">${totalprices.toFixed(2)}</span>`;
+           message.innerHTML =`<span class="text-blue-500 text-[12px]">Coupon Applied Successful</span>`;
+        } else {
+          discount.innerHTML = "";
+          totalprice.innerHTML = `<span class="">${pprice}</span>`;
+          message.innerHTML = `<span class="text-blue-500 text-[12px]">Wrong Coupon</span>`;
+        }
+      }
+    </script>
+  </body>
+</html>
