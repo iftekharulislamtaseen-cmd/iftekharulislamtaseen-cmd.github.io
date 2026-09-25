@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <!-- ডানা ও বডির নিয়ন ব্লু-সায়ান গ্রেডিয়েন্ট -->
+    <linearGradient id="wingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="60%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#000851"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ছড়ানো শক্তিশালী ডানা (Wings) -->
+  <path d="M9 9 L28 2 L22 10 L29 13 L19 16 L14 13 Z" 
+        fill="url(#wingGrad)" stroke="#38bdf8" stroke-width="0.6"/>
+  <path d="M12 16 L23 20 L16 22 Z" fill="url(#wingGrad)"/>
+
+  <!-- ড্রাগনের মুখ ও শিং (পয়েন্টার হিসেবে কাজ করবে) -->
+  <polygon points="1,1 8,2 6,8" fill="#00f2fe"/>
+  <polygon points="8,2 12,0 9,5" fill="#38bdf8"/>
+
+  <!-- সর্পিল বডি ও নিচে বাঁকানো লেজ (Curved Tail) -->
+  <path d="M6 7 Q11 12 11 17 Q11 25 18 26 Q24 27 25 21 Q25 18 21 19 Q18 20 18 24 Q18 28 13 30 Q8 32 6 28 Q5 24 9 19" 
+        fill="none" stroke="url(#bodyGrad)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- লেজের ডগায় ধারালো কাঁটা (Tail Tip) -->
+  <polygon points="13,30 17,31 15,27" fill="#00f2fe"/>
+
+  <!-- চোখ ও পয়েন্টার স্ফুলিঙ্গ -->
+  <circle cx="4" cy="3" r="0.7" fill="#ffffff"/>
+  <circle cx="1" cy="1" r="1.2" fill="#38bdf8"/>
+</svg>

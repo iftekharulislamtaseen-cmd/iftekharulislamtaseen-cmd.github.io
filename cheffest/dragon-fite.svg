@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <!-- রিয়েল আগুনের মাল্টি-লেয়ার গ্রেডিয়েন্ট -->
+    <radialGradient id="fireCore" cx="20%" cy="20%" r="80%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="25%" stop-color="#FFF275"/>
+      <stop offset="55%" stop-color="#FF8C00"/>
+      <stop offset="85%" stop-color="#E52B50"/>
+      <stop offset="100%" stop-color="#7B0000" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="flameBlast" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="20%" stop-color="#FFDD00"/>
+      <stop offset="60%" stop-color="#FF3DF11"/>
+      <stop offset="80%" stop-color="#D00000"/>
+      <stop offset="100%" stop-color="#370000"/>
+    </linearGradient>
+
+    <!-- ড্রাগনের বডি ও স্কেল গ্রেডিয়েন্ট -->
+    <linearGradient id="dragonScales" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B91C1C"/>
+      <stop offset="35%" stop-color="#7F1D1D"/>
+      <stop offset="70%" stop-color="#450A0A"/>
+      <stop offset="100%" stop-color="#1C0404"/>
+    </linearGradient>
+
+    <!-- শিং ও নখের মেটালিক গ্রেডিয়েন্ট -->
+    <linearGradient id="hornShub" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="40%" stop-color="#CA8A04"/>
+      <stop offset="100%" stop-color="#422006"/>
+    </linearGradient>
+
+    <!-- ডানার টেক্সচার গ্রেডিয়েন্ট -->
+    <linearGradient id="wingMembrane" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DC2626"/>
+      <stop offset="50%" stop-color="#991B1B"/>
+      <stop offset="100%" stop-color="#2D0606"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ================= ১. রিয়েল আগুনের শিখা (Fire Breath Pointer) ================= -->
+  <!-- পেছনের আগুনের আভা -->
+  <path d="M0 0 C6 2, 16 3, 22 13 C15 16, 7 13, 0 0 Z" fill="url(#fireCore)" opacity="0.6"/>
+  
+  <!-- মূল জ্বলন্ত শিখা -->
+  <path d="M1 1 Q9 1, 14 6 Q19 12, 23 15 Q14 17, 10 11 Q6 13, 1 1 Z" fill="url(#flameBlast)"/>
+  <path d="M0 0 Q4 5, 8 6 Q14 8, 17 14 Q10 13, 6 9 Q2 9, 0 0 Z" fill="url(#fireCore)"/>
+
+  <!-- ছোট ছোট স্পার্ক ও আগুনের স্ফুলিঙ্গ -->
+  <circle cx="9" cy="3" r="1.5" fill="#FFE600"/>
+  <circle cx="15" cy="8" r="1.2" fill="#FF4D00"/>
+  <circle cx="5" cy="8" r="1" fill="#FFFFFF"/>
+  <path d="M0 0 L5 2 L2 5 Z" fill="#FFFFFF"/>
+
+  <!-- ================= ২. ড্রাগনের ডানা (Wings) ================= -->
+  <path d="M26 21 L56 4 L45 23 L62 25 L41 37 L30 29 Z" fill="url(#wingMembrane)" stroke="#450A0A" stroke-width="0.8"/>
+  <!-- ডানার হাড় ও খাঁজ -->
+  <path d="M26 21 L56 4 M33 24 L45 23 M37 27 L62 25 M36 32 L41 37" stroke="#F87171" stroke-width="0.7" stroke-linecap="round"/>
+
+  <!-- ================= ৩. মাথা ও হাঁ করা মুখ (Roaring Head) ================= -->
+  <!-- ওপরের চোয়াল -->
+  <path d="M16 12 L28 15 L26 21 L19 18 L15 16 Z" fill="url(#dragonScales)" stroke="#991B1B" stroke-width="0.6"/>
+  <!-- নিচের চোয়াল (মুখ খোলা) -->
+  <path d="M17 19 L25 24 L22 26 L16 22 Z" fill="#450A0A" stroke="#7F1D1D" stroke-width="0.5"/>
+  
+  <!-- দাঁত ও মুখের ভেতরের লাভা গ্লো -->
+  <polygon points="18,17 21,17 19,19" fill="#FFFFFF"/>
+  <polygon points="21,18 24,18 22,20" fill="#FFFFFF"/>
+  <polygon points="18,17 23,18 20,21" fill="#FF3B00"/>
+
+  <!-- ================= ৪. শিং (Horns & Spikes) ================= -->
+  <path d="M25 14 Q38 8 46 3 Q36 12 28 17 Z" fill="url(#hornShub)"/>
+  <path d="M27 16 Q36 14 43 11 Q34 17 28 19 Z" fill="url(#hornShub)"/>
+
+  <!-- ================= ৫. জ্বলন্ত চোখ (Fiery Dragon Eye) ================= -->
+  <polygon points="22,14 26,13 25,16 21,16" fill="#FBBF24"/>
+  <ellipse cx="23.5" cy="14.5" rx="0.6" ry="1.4" fill="#000000"/>
+  <circle cx="23" cy="14" r="0.4" fill="#FFFFFF"/>
+
+  <!-- ================= ৬. সর্পিল বডি ও বাঁকানো লেজ (Spined Tail) ================= -->
+  <path d="M24 23 Q27 34 32 38 Q39 44 45 40 Q49 35 44 31 Q38 27 37 36 Q36 47 31 54 Q25 61 19 57 Q14 52 18 43 Q22 36 27 32" 
+        fill="none" stroke="url(#dragonScales)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- পিঠের ধারালো স্পাইক -->
+  <path d="M28 26 L31 24 L30 28 L34 29 L32 33 L37 34 L34 37" fill="#F87171"/>
+  <path d="M42 39 L45 42 L41 43 M37 47 L39 51 L35 50" fill="#EF4444"/>
+
+  <!-- লেজের ডগার ব্লেড (Tail Barb/Spade) -->
+  <path d="M19 57 L11 63 L16 54 L12 50 L20 54 Z" fill="url(#hornShub)" stroke="#78350F" stroke-width="0.5"/>
+</svg>
