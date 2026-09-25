@@ -4,7 +4,7 @@
 @theme {
   --spacing: 1px;
   --breakpoint-*: initial;
-  --breakpoint-sm: 360px;
+  --breakpoint-sm: 175px;
   --breakpoint-md: 480px;
   --breakpoint-lg: 768px;
   --breakpoint-2lg: 901px;
@@ -24,5 +24,5 @@
 }
 
 @utility btn{
-    @apply bg-white py-20 px-50 rounded-full text-black sm:w-full lg:py-16
+    @apply bg-white py-20 px-50 rounded-full text-black sm:w-full lg:py-16 hover:cursor-[url(/dragon-fite.svg),auto]
 }
