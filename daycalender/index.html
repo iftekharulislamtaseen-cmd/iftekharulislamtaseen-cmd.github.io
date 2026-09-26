@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="m-0 p-0 box-border" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-black min-h-screen h-screen flex justify-center items-center m-0 p-0 box-border">
+
+    <div class="bg-white py-40 px-40 border-l-3 border-red-700">
+        <span class="text-[21px] text-red-600 block text-center pb-10">Day Calender</span>
+        <div class="h-20 flex justify-center items-center" id="result"></div>
+    </div>
+
+    <script>
+        const result = document.getElementById("result");
+
+
+        let day = new Date().getDay();
+
+        switch(day){
+            case 0:
+                date = "sunday";
+                break;
+
+            case 1:
+                date =  "monday";
+                break;
+
+            case 2:
+                date = "tuesday";
+                break;
+
+            case 3:
+                date = "wednesday";
+                break;
+
+            case 4:
+                date = "thusday";
+                break;
+            
+            case 5: 
+                date = "friday";
+                break;
+
+            case 6: 
+                date = "saturday";
+        }
+
+        result.innerHTML = `<span class="text-red-600">Today Date Is: ${date}</span>`;
+    </script>
+</body>
+</html>
