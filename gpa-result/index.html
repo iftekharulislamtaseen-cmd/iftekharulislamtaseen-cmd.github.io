@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="m-0 p-o box-border" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="m-0 p-0 box-border h-screen min-h-screen flex justify-center items-center bg-black">
+    <div class="bg-[#f08707] p-10 rounded-r-md border-l-3 border-red-500 w-400">
+        <div>
+            <div class="border border-blue-400 p-10 rounded-md"><input class="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none outline-0 w-360 placeholder:text-red-800 text-red-800" type="number" placeholder="Enter Your Exam Mark" id="input"></div>
+            <div class="h-10 mb-10 -mt-5" id="message"></div>
+        </div>
+        <span class="text-[21px] text-red-800 text-center block">result</span>
+        <div class="text-[13px] text-red-800 border border-blue-400 rounded-md p-20 h-20 flex justify-center items-center mt-10 mb-10" id="result">Your Result Here</div>
+        <div class="flex justify-center"><button class="bg-linear-60 from-pink-400 to-blue-600 pt-5 pb-7 px-20 rounded-md text-white" onclick="getresult()">Submit</button></div>
+    </div>
+    <script>
+        const input = document.getElementById("input");
+        const result = document.getElementById("result");
+        const message = document.getElementById("message");
+
+        function getresult(){
+            renderresult();
+            
+        }
+
+        function renderresult(){
+            result.innerHTML = "Your Result Here";
+            
+            let number = input.value;
+
+            if(number === ""){
+                message.innerHTML = `<span class="text-[12px] text-red-800">Please Input Your Number</span>`;
+        
+            } else if (number < 0){
+                message.innerHTML = `<span class="text-[12px] text-red-800">Please Input Your a Valid Number</span>`;
+                
+            } else if(number > 100){
+                 message.innerHTML = "";
+                result.innerHTML =`<span class="text-[12px] text-red-800">Invalid Input Number</span>`;
+                input.value ="";
+            } else{
+                if(number > 79 && number <= 100){
+                    result.innerHTML =`<span class="text-[14px] text-red-800">Your Result Is:  A+</span>`;
+                    message.innerHTML = "";
+                } else if(number > 69 && number <= 79){
+                    result.innerHTML =`<span class="text-[14px] text-red-800">Your Result Is:  A</span>`;
+                    message.innerHTML = "";
+                } else if(number > 59 && number <= 69){
+                    result.innerHTML =`<span class="text-[14px] text-red-800">Your Result Is:  A-</span>`;
+                    message.innerHTML = "";
+                }else if (number > 49 && number <= 59){
+                    result.innerHTML =`<span class="text-[14px] text-red-800">Your Result Is: B</span>`;
+                    message.innerHTML = "";
+                }else if(number > 39 && number <= 49){
+                    result.innerHTML =`<span class="text-[14px] text-red-800">Your Result Is: C</span>`;
+                    message.innerHTML = "";
+                } else if(number > 32 && number <= 39){
+                    result.innerHTML =`<span class="text-[14px] text-red-800">Your Result Is: D</span>`;
+                    message.innerHTML = "";
+                } else if (number >= 0 && number <=32){
+                    result.innerHTML =`<span class="text-[14px] text-red-800">Your Result Is: Fail</span>`;
+                    message.innerHTML = "";
+                }
+                input.value = "";
+            }
+        }
+
+        input.addEventListener('keydown', function(sub){
+            if(sub.key === "Enter"){
+                getresult();
+            }
+        });
+    </script>
+</body>
+</html>
